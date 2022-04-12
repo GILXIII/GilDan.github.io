@@ -1,0 +1,407 @@
+
+
+html { 
+	font-size: calc(1em + 1vw)
+}
+
+*{
+	border:0;
+	box-sizing: border-box; 
+	margin:0;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0;
+	list-style-type: none;
+}
+
+a:link {
+	color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar { width: 0 !important }
+
+body{
+	background-color: #f2f2f2;
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none; 
+}
+
+footer{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	-webkit-border-top-left-radius: 15px;
+	-moz-border-radius-topleft: 15px;
+	border-top-left-radius: 15px;
+	background-color: white;
+	width: 65px;
+	height: 40px;
+	padding-left: 8px;
+	font-family: 'Futura Light Condensed BT', arial, sans-serif;
+	font-weight: lighter;
+	font-size: 60%;
+	text-align: center;
+	vertical-align: middle;
+
+   -webkit-transition: width .5s;
+   transition: width .5s;
+}
+
+footer:hover{
+	width: 300px;
+}
+
+nav{
+	top: 0;
+	position: fixed;
+	z-index: 11;	
+	background-color: #110f11;
+	width: 100%;
+	height:60px;
+	text-align: center;
+	opacity: .3;
+	transition: opacity .5s;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: white;
+}
+
+nav:hover{
+	opacity: 1;
+}
+
+.aboutintro{
+	background-color: #242425;
+	padding-top: 10%;
+	height: 50vw;
+	padding-left: 9%;
+	padding-right: 9%;
+}
+
+.aboutsoftware{
+	height: 50vw;
+	text-align: center;
+	padding-top: 5vw;
+	padding-left: 9%;
+	padding-right: 9%;
+}
+
+.aboutprogramacion{
+	height: 25vw;
+	text-align: center;
+	padding-top: 2vw;
+	padding-left: 9%;
+	padding-right: 9%;
+	background-color: #242425;
+
+}
+
+.aboutprogramacion:hover img{
+	transition: all .5s ease-out;
+	width: 3vw;
+}
+
+.aboutintereses{
+	height: 25vw;
+	text-align: center;
+	padding-top: 4vw;
+	padding-left: 9%;
+	padding-right: 9%;
+	background: url("../img/bfi.jpg") center fixed;
+}
+
+.aboutcolorfav{
+	height: 25vw;
+	text-align: center;
+	padding-top: 2vw;
+	padding-left: 9%;
+	padding-right: 9%;
+	background-color: #bd3637;
+	vertical-align: middle;
+}
+
+.active{
+	border-bottom:3px solid #bd3637;
+}
+
+.bars td img{
+	width: 100%;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.desc{
+	float: left;
+	width: 70%;
+}
+
+.gallerymain{
+	background-color: #242425;
+	padding-top: 4%;
+	height: 100%;
+}
+
+.gallerycontainer{
+	position: relative;
+	width: 100%;
+	height: 30vw;
+	overflow: hidden;
+}
+
+.gallerythumbs{
+  padding-top: 2vw;
+	padding-left: 9%;
+	padding-right: 9%;
+}
+
+.galleryscroller{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0%;
+	transition: all .7s;
+}
+
+.galleryscroller:hover{
+	cursor: pointer;
+}
+
+.galleryhover:hover{
+	left: 4%;
+	-webkit-box-shadow: -3px 0px 40px 5px rgba(0,0,0,0.66); 
+	box-shadow: -3px 0px 40px 5px rgba(0,0,0,0.66);
+}
+
+.galleryreel article .new{
+	right: 10%;
+}
+
+.galleryvtable{
+	padding-left: 9%;
+	padding-right: 9%;
+	width: 100%;
+}
+
+.galleryvthumbs{	
+	display: inline-block;
+	width: 100%;
+}
+
+.galleryvcontainer div{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.galleryvbutton{	
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 30%;
+	width: 55%;
+	transition: all .3s;
+}
+
+.galleryvbutton:hover{	
+	width: 60%;
+}
+
+.clicked{
+	left: 90%;
+}
+
+.floatleft{
+	float: left;
+	left: 0;
+}
+
+.footericon{
+	height: 20px;
+}
+
+.height100{
+	height: 100%;
+}
+
+.intersesgif td img{
+	width:50%;
+}
+
+.marr{
+	width: 20px;
+	height: auto;	
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	opacity: 0;
+}
+
+.new{
+	position: absolute;
+	right: 0;
+	width:20vw;
+}
+
+.navi{
+	height: 100%;
+	width: 30%;
+	display: inline-block;
+	padding-top: 0px;
+	transition: all .4s;
+}
+
+.navi:hover{
+	background-color: #bd3637;
+	cursor: pointer;
+	padding-top: 7px;
+	height: 85px;
+	-webkit-box-shadow: 0px 10px 13px -4px rgba(0,0,0,0.53);
+	-moz-box-shadow: 0px 10px 13px -4px rgba(0,0,0,0.53);
+	box-shadow: 0px 10px 13px -4px rgba(0,0,0,0.53);
+}
+
+.navi:hover .marr{
+	opacity: 1;
+}
+
+.others td img{
+	width: 70%;
+}
+
+.pfp{
+	width: 70%;
+	vertical-align: middle;
+}
+
+.reflectx{
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
+}
+
+.smallmargintop{
+	margin-top: 3vw;
+}
+
+.t1{
+	font-family: 'Futura Bk BT', arial, sans-serif;
+	font-size: .7em;
+	font-weight: 100;
+	padding-top: 7px;
+}
+.t2{
+	font-family: 'Futura Light Condensed BT', arial, sans-serif;
+	font-weight: lighter;
+	font-stretch: condensed;
+	font-size: .4em;
+}
+
+.t3{
+	font-family: 'Futura BK BT', arial, sans-serif;
+	font-size:2.2vw;
+	color: white;
+	font-weight:100;
+}
+
+.t3b{
+	font-family: 'Futura BK BT', arial, sans-serif;
+	font-size:2.2vw;
+	color: black;
+	font-weight:100;
+}
+
+.thola{
+	font-family: 'Futura Light Condensed BT', arial, sans-serif;
+	font-size: 4vw;
+	color: #ffffff;
+	font-weight:bold;
+}
+
+.verticalalign{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.welcome{
+	background-color: #242425;
+	padding-top: 10%;
+	height: 45vw;
+}
+
+.welcome img{
+	width: 50%;
+	vertical-align: middle;
+	animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.welcomememe{
+	background: url("../img/meme.png") no-repeat fixed;
+	background-position: bottom 5px left 7px;
+  background-size: auto;
+}
+
+.welcomereel{
+	height: 56vw;
+	background-color: black;
+}
+
+.welcomereel:hover{
+	cursor: pointer;
+}
+
+.welcomereel iframe{
+	display: none;
+}
+
+.width100{
+	width: 100%;
+}
+
+.width50{
+	width: 50%;
+}
+
+.width50vw{
+	width: 2vw;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        width: 45%;
+    }
+    100% {
+        opacity: 1;
+        width: 50%;
+     }
+}
+
+@media screen and (max-width: 767px) {
+	nav{
+		height:45px;
+	}
+	.navi:hover{
+		height: 65px;
+	}
+	.t3b{
+		font-size:2.7vw;
+	}
+	.welcome{
+		padding-top: 15%;
+	}
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Designing for a living</title>
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="welcomememe">
+	<nav>
+		<a href="index.html"><div class="navi active hovering"><p class="t1">INICIO</p><p class="t2">HOME</p><img src="img/S1.png" class="marr"></div></a>
+			
+		<a href="gallery.html"><div class="navi hovering"><p class="t1">PORTAFOLIO</p><p class="t2">WORKBOOK</p><img src="img/S1.png" class="marr"></div></a>
+			
+		<a href="about.html"><div class="navi hovering"><p class="t1">ACERCA DE MI</p><p class="t2">ABOUT</p><img src="img/S1.png" class="marr"></div></a>
+	</nav>
+
+
+	<article class="welcome width100">
+		<img src="img/main1.gif" class="center">
+	</article>
+
+	<article class="welcomereel width100">
+		<img src="img/new.gif" class="new" id="reelnew">
+		<img src="img/demorhumb.jpg" class="width100" id="reelthumb" onclick="showreel()">
+		<iframe src="https://player.vimeo.com/video/676985009?h=2df8745237" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen id="reel"></iframe>
+	</article>
+
+	<footer>
+		<table class="height100">
+			<tr>
+				<td>
+					<img src="img/footericon.png" class="footericon">
+				</td>
+				<td>
+					<span>&nbsp;&nbsp;betterdg@hotmail.com</span>
+				</td>
+			</tr>
+		</table>
+	</footer>
+
+	<script>
+	function showreel() {
+	  document.getElementById("reel").style.display = "block";
+	  document.getElementById("reelthumb").style.display = "none";
+	  document.getElementById("reelnew").style.display = "none";
+	}
+	</script>
+
+</body>
+
+</html>
